@@ -44,45 +44,46 @@
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="tentangModalLabel">Tentang Aplikasi Metode TOPSIS</h5>
+                <h5 class="modal-title" id="tentangModalLabel">Tentang Aplikasi Sistem Rekomendasi Pakaian Dingin yang Stylish</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
                 <p>
-                    Dalam lingkungan bisnis yang kompetitif, penilaian kinerja karyawan merupakan komponen krusial dalam manajemen sumber daya manusia. Penilaian yang akurat dan adil dapat membantu perusahaan mengidentifikasi karyawan berprestasi, merancang program pengembangan, dan meningkatkan produktivitas secara keseluruhan. Salah satu metode yang dapat digunakan untuk penilaian kinerja karyawan adalah <b>Metode TOPSIS (Technique for Order Preference by Similarity to Ideal Solution)</b>.
+                    Dalam menghadapi cuaca dingin yang seringkali menuntut gaya dan kenyamanan, aplikasi ini menggunakan Sistem Pendukung Keputusan (SPK) berdasarkan Metode TOPSIS (Technique for Order Preference by Similarity to Ideal Solution) untuk merekomendasikan pakaian yang tidak hanya stylish tetapi juga sesuai dengan preferensi dan kebutuhan pengguna.
                 </p>
                 <p>
-                    Metode TOPSIS adalah salah satu teknik pengambilan keputusan multi-kriteria yang membantu dalam menilai dan menentukan peringkat alternatif berdasarkan beberapa kriteria. Prinsip dasar TOPSIS adalah bahwa solusi terbaik adalah yang paling dekat dengan solusi ideal positif (optimal) dan paling jauh dari solusi ideal negatif (paling buruk).
+                    Metode TOPSIS digunakan untuk mengevaluasi berbagai alternatif pakaian berdasarkan kriteria-kriteria seperti harga, kualitas bahan, desain pakaian, kenyamanan, ketersediaan ukuran, dan durabilitas. Bobot untuk setiap kriteria adalah sebagai berikut: Harga (5), Kualitas Bahan (5), Desain Pakaian (4), Kenyamanan (5), Ketersediaan Ukuran (4), dan Durabilitas (5).
                 </p>
                 <p>
-                    <b>Tahapan Aplikasi TOPSIS:</b>
+                    <b>Tahapan Penggunaan Sistem Rekomendasi Pakaian:</b>
                     <ul>
-                        <li><b>Identifikasi Kriteria Penilaian:</b> Kriteria yang umum digunakan mencakup Kedisiplinan, Keterampilan, Sikap, Produktivitas, dan Kualitas Pekerjaan. Masing-masing kriteria dapat memiliki sub-kriteria lebih lanjut seperti Keterlambatan, Pengalaman Kerja, Kerjasama, Output, dan Kualitas Produk.</li>
-                        <li><b>Penentuan Bobot Kriteria:</b> Setiap kriteria diberi bobot berdasarkan tingkat kepentingannya. Misalnya, Kedisiplinan (30%), Keterampilan (25%), Sikap (20%), Produktivitas (25%), dan Kualitas Pekerjaan (30%).</li>
-                        <li><b>Normalisasi Matriks Keputusan:</b> Data kinerja karyawan dinormalisasi untuk menghilangkan perbedaan skala antar kriteria.</li>
-                        <li><b>Pembentukan Matriks Keputusan Ternormalisasi Terbobot:</b> Matriks keputusan dinormalisasi dikalikan dengan bobot masing-masing kriteria untuk mendapatkan matriks keputusan ternormalisasi terbobot.</li>
-                        <li><b>Penentuan Solusi Ideal Positif dan Negatif:</b> Solusi ideal positif (A+) dan solusi ideal negatif (A-) ditentukan berdasarkan nilai maksimum dan minimum dari matriks keputusan ternormalisasi terbobot.</li>
-                        <li><b>Perhitungan Jarak Setiap Alternatif ke Solusi Ideal Positif dan Negatif:</b> Jarak setiap alternatif (karyawan) dihitung terhadap solusi ideal positif dan negatif.</li>
-                        <li><b>Perhitungan Nilai Preferensi:</b> Nilai preferensi dihitung berdasarkan rasio jarak ke solusi ideal negatif terhadap total jarak ke solusi ideal positif dan negatif.</li>
-                        <li><b>Peringkat Karyawan:</b> Karyawan diberi peringkat berdasarkan nilai preferensi. Karyawan dengan nilai preferensi tertinggi dianggap memiliki kinerja terbaik.</li>
+                        <li><b>Identifikasi Kriteria:</b> Setiap kriteria dinilai dengan bobot yang sesuai untuk mencerminkan pentingnya dalam keputusan rekomendasi pakaian.</li>
+                        <li><b>Penentuan Bobot Kriteria:</b> Harga (5), Kualitas Bahan (5), Desain Pakaian (4), Kenyamanan (5), Ketersediaan Ukuran (4), Durabilitas (5).</li>
+                        <li><b>Normalisasi Data:</b> Data tentang pilihan pakaian dinormalisasi untuk memperhitungkan skala dan variasi antar kriteria.</li>
+                        <li><b>Pembentukan Matriks Keputusan Ternormalisasi Terbobot:</b> Matriks keputusan dinormalisasi dikalikan dengan bobot kriteria untuk menghasilkan nilai relatif masing-masing alternatif pakaian.</li>
+                        <li><b>Penentuan Solusi Ideal Positif dan Negatif:</b> Solusi ideal positif (yang ideal) dan negatif (yang tidak diharapkan) ditentukan berdasarkan nilai maksimum dan minimum dari matriks keputusan ternormalisasi terbobot.</li>
+                        <li><b>Perhitungan Jarak Alternatif ke Solusi Ideal:</b> Setiap alternatif (pakaian) dinilai berdasarkan seberapa dekatnya dengan solusi ideal positif dan seberapa jauhnya dari solusi ideal negatif.</li>
+                        <li><b>Perhitungan Nilai Preferensi:</b> Nilai preferensi dihitung untuk menentukan rekomendasi pakaian yang paling sesuai dengan preferensi pengguna.</li>
+                        <li><b>Rekomendasi Pakaian:</b> Berdasarkan nilai preferensi, sistem merekomendasikan pakaian yang paling cocok dan stylish sesuai dengan kriteria yang telah ditentukan.</li>
                     </ul>
                 </p>
                 <p>
-                 <b>Keuntungan Menggunakan Aplikasi TOPSIS:</b>
-                 <ul>
-                    <li><b>Objektivitas:</b> Mengurangi subjektivitas dalam penilaian kinerja dengan menggunakan pendekatan berbasis data.</li>
-                    <li><b>Fleksibilitas:</b> Dapat digunakan dengan berbagai jenis kriteria dan bobot yang dapat disesuaikan dengan kebutuhan organisasi.</li>
-                    <li><b>Efisiensi:</b> Mempercepat proses penilaian kinerja dengan pendekatan sistematis dan terstruktur.</li>
-                    <li><b>Keputusan Berdasarkan Data:</b> Membantu manajemen dalam membuat keputusan yang lebih informasional dan berbasis bukti.</li>
-                </ul>
-            </p>
-            <p>
-                Aplikasi metode TOPSIS dalam penilaian kinerja karyawan adalah alat yang efektif untuk membantu perusahaan dalam menilai kinerja secara objektif dan adil. Dengan menggabungkan berbagai kriteria penilaian dan bobot yang sesuai, metode ini memberikan gambaran yang jelas tentang performa karyawan, memungkinkan manajemen untuk mengambil keputusan yang lebih baik dan tepat sasaran dalam pengelolaan sumber daya manusia.
-            </p>
+                    <b>Manfaat Penggunaan Sistem Rekomendasi Pakaian Dingin yang Stylish:</b>
+                    <ul>
+                        <li><b>Kepuasan Pengguna:</b> Memberikan pengalaman belanja yang lebih personal dan memuaskan dengan rekomendasi yang disesuaikan.</li>
+                        <li><b>Penyederhanaan Proses Pemilihan:</b> Mengurangi kebingungan dan waktu dalam memilih pakaian dengan menyajikan opsi terbaik berdasarkan preferensi individu.</li>
+                        <li><b>Stylish dan Fungsional:</b> Menggabungkan gaya dengan kebutuhan cuaca dingin untuk memastikan kenyamanan dan penampilan yang memukau.</li>
+                        <li><b>Keputusan Berbasis Data:</b> Menggunakan pendekatan sistematis untuk menghasilkan rekomendasi yang dapat dipercaya dan sesuai.</li>
+                    </ul>
+                </p>
+                <p>
+                    Dengan menggunakan Sistem Rekomendasi Pakaian Dingin yang Stylish berbasis Metode TOPSIS, pengguna dapat dengan mudah menemukan pilihan pakaian yang tidak hanya memenuhi kebutuhan fungsional tetapi juga meningkatkan gaya mereka dalam cuaca dingin.
+                </p>
+            </div>
         </div>
     </div>
-
 </div>
+
 <div class="modal-footer">
     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
 </div>
